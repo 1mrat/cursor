@@ -1,5 +1,9 @@
 # Cursor
 
+> [!IMPORTANT]
+> Will be moving this to github.com/cursorcoders tomorrow.
+> Will also provide more guidance of purpose, style and structure with examples.
+
 This is a repo of cursor prompts as text files without extension.
 
 It allow you to quickly @ mention then in Cursor and keep your .cursorrules file small.
