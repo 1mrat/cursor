@@ -1,1 +1,42 @@
-Add or update the docblock comments for all the functions.
+Add or update the documentation comments for all functions using the following guidelines:
+
+1. Use JSDoc-style format with /** and */.
+2. Start with a clear, concise description of the function's purpose.
+3. Use @template for generic type parameters.
+4. Use @param for each parameter, including type information in curly braces.
+5. Use @returns for the return value, including type information in curly braces.
+6. Add @throws for any exceptions the function may throw.
+7. Include @example with a code snippet demonstrating usage when appropriate.
+8. Use @see for related functions or documentation.
+9. Add @async for asynchronous functions.
+10. Include @deprecated with an explanation if the function is deprecated.
+11. Use @public, @private, or @protected to indicate visibility when necessary.
+12. Add @readonly for read-only properties.
+13. Use @typedef for complex types or interfaces used in the function.
+14. Include @default for parameters with default values.
+15. Add @optional for optional parameters.
+16. Use @callback for function types passed as parameters.
+17. Include @property for documenting properties of object parameters.
+
+Example format:
+
+/**
+ * Brief description of the function's purpose.
+ *
+ * @template T - Description of the type parameter
+ * @param {string} param1 - Description of the first parameter
+ * @param {number} [param2=defaultValue] - Description of the optional second parameter
+ * @param {{prop1: string, prop2: number}} param3 - Description of the object parameter
+ * @param {(value: T) => boolean} callback - Description of the callback function
+ * @returns {Promise<T>} Description of the return value
+ * @throws {Error} Description of when an error is thrown
+ *
+ * @example
+ * ```typescript
+ * const result = await exampleFunction<string>('input', 42, { prop1: 'value', prop2: 10 }, (val) => val.length > 5);
+ * console.log(result);
+ * ```
+ *
+ * @see RelatedFunction
+ * @public
+ */
