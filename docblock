@@ -1,0 +1,9 @@
+Add or update the documentation comments for all functions using the following guidelines:
+
+1. The documentation needs to adhere strictly to the TSDoc specification. TSDoc is a proposal to standardize the doc comments used in TypeScript code, so that different tools can extract content without getting confused by each other's markup.
+2. The documentation needs to be written in English.
+3. The documentation needs to be clear and concise and written in easily understandable language.
+4. Use at least the following tags: `@param`, `@returns` and `@throws` if the function can throw an error.
+5. Ensure a `@example` tags is used for exported functions and do not use `@example` for internal functions.
+5. Prefer `@inheritDoc` over repeating yourself.
+6. Do not use any tags that are not listed in the TSDoc specification.
